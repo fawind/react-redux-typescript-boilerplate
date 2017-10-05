@@ -1,0 +1,47 @@
+{
+  "name": "react-redux-typescript-boilerplate",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "./node_modules/.bin/webpack-dev-server --watch-poll",
+    "clean": "rimraf dist",
+    "lint": "./node_modules/.bin/tslint --project tsconfig.json",
+    "test": "./node_modules/.bin/jest --config test.json -u",
+    "build": "npm run clean && ./node_modules/.bin/webpack --env.build --env.sourceMap"
+  },
+  "devDependencies": {
+    "@types/node": "^8.0.24",
+    "@types/react": "^16.0.2",
+    "@types/react-dom": "^15.5.3",
+    "@types/react-hot-loader": "^3.0.3",
+    "@types/react-redux": "^5.0.5",
+    "@types/webpack": "^3.0.9",
+    "@types/webpack-dev-server": "^2.4.1",
+    "@types/webpack-env": "^1.13.0",
+    "awesome-typescript-loader": "^3.2.3",
+    "copy-webpack-plugin": "^4.0.1",
+    "css-loader": "^0.28.7",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "html-webpack-plugin": "^2.30.1",
+    "jest": "^20.0.4",
+    "react-hot-loader": "^3.0.0-beta.7",
+    "rimraf": "^2.6.1",
+    "style-loader": "^0.18.2",
+    "ts-jest": "^20.0.10",
+    "tslint": "^5.6.0",
+    "tslint-react": "^3.2.0",
+    "typescript": "^2.4.2",
+    "webpack": "^3.5.5",
+    "webpack-dev-server": "^2.7.1"
+  },
+  "dependencies": {
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-redux": "^5.0.6",
+    "react-router-dom": "^4.1.2",
+    "redoodle": "^2.2.2",
+    "redux": "^3.7.2",
+    "redux-thunk": "^2.2.0",
+    "reselect": "^3.0.1",
+    "tslib": "^1.7.1"
+  }
+}
